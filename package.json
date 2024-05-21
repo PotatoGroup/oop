@@ -1,0 +1,29 @@
+{
+  "name": "oop",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build:graph": "turbo run build --graph=graph.png",
+    "build": "turbo run build",
+    "clean": "turbo run clean",
+    "change": "pnpm changeset && pnpm changeset version",
+    "release": "pnpm change && pnpm publish -r"
+  },
+  "keywords": [
+    "oop"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@changesets/cli": "^2.27.3",
+    "father": "^4.4.1",
+    "turbo": "^1.13.3",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.2.2"
+  }
+}
